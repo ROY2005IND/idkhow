@@ -1,0 +1,49 @@
+{
+  "name": "verichain-supply",
+  "version": "1.0.0",
+  "description": "Decentralized Supply Chain Tracking and Product Authentication Platform",
+  "private": true,
+  "workspaces": [
+    "smart-contracts",
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "contracts:install": "cd smart-contracts && npm install",
+    "contracts:compile": "cd smart-contracts && npm run compile",
+    "contracts:test": "cd smart-contracts && npm test",
+    "contracts:deploy:local": "cd smart-contracts && npm run deploy:local",
+    "contracts:deploy:mumbai": "cd smart-contracts && npm run deploy:mumbai",
+    "contracts:node": "cd smart-contracts && npm run node",
+    "backend:install": "cd backend && npm install",
+    "backend:dev": "cd backend && npm run dev",
+    "backend:start": "cd backend && npm start",
+    "frontend:install": "cd frontend && npm install",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "install:all": "npm run contracts:install && npm run backend:install && npm run frontend:install",
+    "test:all": "npm run contracts:test"
+  },
+  "keywords": [
+    "blockchain",
+    "supply-chain",
+    "solidity",
+    "polygon",
+    "web3",
+    "ethereum",
+    "smart-contracts",
+    "dapp",
+    "react",
+    "nodejs"
+  ],
+  "author": "VeriChain Supply Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/verichain-supply"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
