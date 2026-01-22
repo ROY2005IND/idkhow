@@ -1,0 +1,109 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment Variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.env
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+
+# Hardhat
+cache/
+artifacts/
+deployments/
+typechain/
+typechain-types/
+
+# Testing
+coverage/
+coverage.json
+.coverage_contracts/
+.coverage_cache/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Database
+*.sqlite
+*.db
+
+# Private keys and secrets
+*.pem
+*.key
+secrets.json
+mnemonic.txt
+
+# Compiled files
+*.compiled
+*.js.map
+
+# Documentation build
+docs/_build/
+
+# Python (if used for scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+ENV/
+
+# Frontend specific
+.cache/
+.parcel-cache/
+.nuxt/
+.vuepress/dist
+
+# Backend specific
+uploads/
+sessions/
+
+# Smart contract specific
+flatten/
+*.flat.sol
+
+# Gas reports
+gas-report.txt
+
+# Solidity coverage
+.coverage_artifacts/
+.coverage_cache/
+
+# Project specific
+Psi-main/
+Psi-main.zip
