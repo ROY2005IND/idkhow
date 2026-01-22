@@ -1,5 +1,5 @@
 import React, { Component, ErrorInfo, ReactNode } from 'react'
-import { ErrorBoundaryProps, ErrorBoundaryState } from '../../types/error.types'
+import { ErrorBoundaryProps, ErrorBoundaryState } from '../../../types/error.types'
 
 export class ErrorBoundary extends Component<
   { children: ReactNode; fallback?: ReactNode; onError?: (error: Error, errorInfo: ErrorInfo) => void },

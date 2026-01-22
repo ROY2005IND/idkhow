@@ -35,7 +35,7 @@ export enum ErrorType {
   EVENT_NOT_FOUND = 'EVENT_NOT_FOUND',
   VERIFICATION_FAILED = 'VERIFICATION_FAILED',
 
-  // Unknown/Error Fallback
+  // Unknown Error Fallback
   UNKNOWN_ERROR = 'UNKNOWN_ERROR'
 }
 
@@ -65,3 +65,16 @@ export interface ErrorResponse {
   details?: Record<string, any>
   timestamp: string
 }
+
+// Additional exports for React components
+export interface ErrorBoundaryProps {
+  children: React.ReactNode
+  fallback?: React.ReactNode
+  onError?: (error: Error, errorInfo: React.ErrorInfo) => void
+}
+
+export interface ErrorBoundaryState {
+  hasError: boolean
+  error: Error | null
+}
+
